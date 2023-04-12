@@ -23,7 +23,7 @@ body {
 }
 
 .App-header {
-  margin: 50px;
+  padding: 40px;
   color: #fff;
   font-family: "Oswald", "Roboto", sans-serif !important;
   font-weight: 400;
@@ -40,8 +40,9 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
-  padding-top: 40%;
   z-index: 10;
+  background: rgb(54,54,54);
+  background: linear-gradient(335deg, rgba(54,54,54,1) 0%, rgb(59, 122, 40) 54%, rgb(59, 122, 40) 100%);
 }
 
 .header-img {
@@ -53,6 +54,24 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.header-scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  transform: translateX(50%);
+  color: white;
+}
+
+.scroll-indicator-line {
+  height: 60px;
+  width: 1px;
+  background: white;
 }
 
 .App-title {
